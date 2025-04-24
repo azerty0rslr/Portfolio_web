@@ -20,25 +20,16 @@ body {
     margin: 0 auto;
 }
 
-/* Header */
+/* Header (sans boîte) */
 header {
+    background-color: transparent; /* Enlever la couleur de fond */
+    padding: 40px 20px;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #00796b; /* Plus doux, plus moderne */
-    color: white;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-header h1 {
-    font-size: 3em;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.3em;
-    font-style: italic;
+    font-size: 2em;
+    font-weight: bold;
+    color: #00796b;
+    border: none; /* Enlever la bordure */
+    box-shadow: none; /* Enlever l'ombre */
 }
 
 /* Sections */
@@ -55,19 +46,25 @@ section h2 {
     text-align: center;
 }
 
-/* À propos */
-#a-propos {
-    background-color: #ffffff;
-    padding: 40px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+/* À propos de moi (sans boîte) */
+#about {
+    padding: 40px 20px;
     text-align: center;
+    background-color: transparent; /* Enlever la couleur de fond */
+    border: none; /* Enlever la bordure */
+    box-shadow: none; /* Enlever l'ombre */
 }
 
-#a-propos p {
-    font-size: 1.2em;
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
     color: #555;
 }
+
 
 /* Expériences professionnelles et formation */
 #experience-formation {
@@ -167,7 +164,7 @@ section h2 {
 }
 
 
-/* Formulaire de Contact */
+/* Formulaire de Contact (sans boîte) */
 #contact {
     display: flex;
     flex-direction: column;
@@ -175,9 +172,9 @@ section h2 {
     padding: 20px;
     max-width: 600px;
     margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent; /* Enlever la couleur de fond */
+    border: none; /* Enlever la bordure */
+    box-shadow: none; /* Enlever l'ombre */
 }
 
 #contact input,
@@ -203,24 +200,12 @@ section h2 {
     background-color: #004d40;
 }
 
-
-/* Footer */
+/* Footer (sans boîte) */
 footer {
+    background-color: transparent; /* Enlever la couleur de fond */
+    padding: 20px;
     text-align: center;
-    padding: 30px;
-    background-color: #00796b;
-    color: white;
-    border-radius: 8px;
-    margin-top: 60px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    font-size: 1em;
+    border: none; /* Enlever la bordure */
+    box-shadow: none; /* Enlever l'ombre */
 }
