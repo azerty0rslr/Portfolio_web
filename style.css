@@ -98,22 +98,25 @@ section h2 {
     color: #555;
 }
 
-/* Compétences et certifications */
-#competences {
+/* Section compétences et certifications */
+#competences,
+#certifications {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 40px;
 }
 
-#competences ul {
+#competences ul,
+#certifications ul {
     list-style-type: none;
     padding-left: 0;
     width: 48%;
     margin-bottom: 30px;
 }
 
-#competences li {
+#competences li,
+#certifications li {
     background-color: #ffffff;
     padding: 10px;
     border-radius: 8px;
@@ -126,7 +129,14 @@ section h2 {
 #projets {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;  /* Centrer les projets */
+}
+
+.projets-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les projets */
+    gap: 20px; /* Ajouter un espace entre les projets */
 }
 
 .projet {
@@ -137,6 +147,7 @@ section h2 {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    text-align: center; /* Centrer le contenu du projet */
 }
 
 .projet:hover {
@@ -151,7 +162,9 @@ section h2 {
 
 .projet p {
     color: #555;
+    font-size: 1em;
 }
+
 
 /* Formulaire de contact */
 #contact-form {
