@@ -1,151 +1,172 @@
-/* Réinitialisation des marges et paddings */
+/* Réinitialisation des marges et des bordures */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corps de la page */
+/* Corps du site */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f8fa;
-    color: #333;
-    padding: 0 20px;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Conteneur principal */
+/* En-tête */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #00796b;
+    color: white;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #004d40;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Container principal */
 .container {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* Header - sans boîte */
-header {
-    background-color: transparent;  /* Enlever la couleur de fond */
+/* Section À propos de moi */
+#a-propos {
+    background-color: transparent; /* Pas de fond */
     padding: 40px 20px;
     text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    color: #00796b;
-    border: none;  /* Enlever toute bordure */
-    box-shadow: none;  /* Enlever l'ombre portée */
 }
 
-/* Sections */
-section {
-    margin-bottom: 60px;
-}
-
-section h2 {
+#a-propos h2 {
     font-size: 2.5em;
-    color: #00796b;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-/* À propos de moi - sans boîte */
-#about {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: transparent;  /* Supprimer la couleur de fond */
-    border: none;  /* Enlever toute bordure */
-    box-shadow: none;  /* Enlever l'ombre portée */
-}
-
-#about h2 {
-    font-size: 2em;
     margin-bottom: 20px;
 }
 
-#about p {
+#a-propos p {
     font-size: 1.1em;
     color: #555;
 }
 
-
-/* Expériences professionnelles et formation */
+/* Section Expériences et Formations */
 #experience-formation {
-    margin-top: 40px;
+    padding: 40px 20px;
+    background-color: transparent;
+    text-align: center;
+}
+
+#experience-formation h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 #experience-formation ul {
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
 }
 
 #experience-formation li {
-    background-color: #fff;
-    padding: 15px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#experience-formation li .title {
-    font-weight: 700;
-    font-size: 1.2em;
-    color: #00796b;
+#experience-formation .title {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-#experience-formation li .details {
+#experience-formation .details {
     font-size: 1em;
     color: #555;
 }
 
-/* Section compétences et certifications */
-#competences,
-#certifications {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 40px;
+#experience-formation p {
+    font-size: 1.1em;
+    color: #333;
 }
 
-#competences ul,
-#certifications ul {
-    list-style-type: none;
-    padding-left: 0;
-    width: 48%;
+/* Section Compétences */
+#competences {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+#competences h2 {
+    font-size: 2.5em;
     margin-bottom: 30px;
 }
 
-#competences li,
+#competences ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#competences li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Section Certifications */
+#certifications {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+#certifications h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#certifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 #certifications li {
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    font-size: 1.1em;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 /* Section Projets */
 #projets {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 40px;
+    padding: 40px 20px;
+    background-color: transparent;
+    text-align: center;
+}
+
+#projets h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .projets-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    justify-items: center; /* Centrer les éléments */
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .projet {
-    background-color: #ffffff;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 30%;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
-    width: 100%; /* Prendre toute la largeur disponible */
+    transition: transform 0.3s ease;
 }
 
 .projet:hover {
@@ -153,47 +174,53 @@ section h2 {
 }
 
 .projet h3 {
-    color: #00796b;
-    margin-bottom: 15px;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .projet p {
-    color: #555;
     font-size: 1em;
+    color: #555;
 }
 
-
-/* Formulaire de Contact (sans boîte) */
+/* Formulaire de contact */
 #contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     max-width: 600px;
     margin: 0 auto;
-    background-color: transparent;  /* Supprimer la couleur de fond */
-    border: none;  /* Enlever toute bordure */
-    box-shadow: none;  /* Enlever l'ombre portée */
-    border-radius: 0;  /* Enlever tout arrondi */
 }
 
 #contact input,
 #contact textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
     border-radius: 5px;
     border: 1px solid #ddd;
-    font-size: 1em;
+    background-color: transparent;
 }
 
 #contact input[type="submit"] {
     background-color: #00796b;
     color: white;
-    cursor: pointer;
     font-weight: bold;
     border: none;
+    padding: 10px 20px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
@@ -201,12 +228,24 @@ section h2 {
     background-color: #004d40;
 }
 
-/* Footer - sans boîte */
+/* Footer */
 footer {
-    background-color: transparent;  /* Supprimer la couleur de fond */
-    padding: 20px;
+    background-color: transparent;
     text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
     font-size: 1em;
-    border: none;  /* Enlever toute bordure */
-    box-shadow: none;  /* Enlever l'ombre portée */
+    color: #333;
+}
+
+footer a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
