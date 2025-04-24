@@ -20,16 +20,16 @@ body {
     margin: 0 auto;
 }
 
-/* Header (sans boîte) */
+/* Header - sans boîte */
 header {
-    background-color: transparent; /* Enlever la couleur de fond */
+    background-color: transparent;  /* Enlever la couleur de fond */
     padding: 40px 20px;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
     color: #00796b;
-    border: none; /* Enlever la bordure */
-    box-shadow: none; /* Enlever l'ombre */
+    border: none;  /* Enlever toute bordure */
+    box-shadow: none;  /* Enlever l'ombre portée */
 }
 
 /* Sections */
@@ -46,13 +46,13 @@ section h2 {
     text-align: center;
 }
 
-/* À propos de moi (sans boîte) */
+/* À propos de moi - sans boîte */
 #about {
     padding: 40px 20px;
     text-align: center;
-    background-color: transparent; /* Enlever la couleur de fond */
-    border: none; /* Enlever la bordure */
-    box-shadow: none; /* Enlever l'ombre */
+    background-color: transparent;  /* Supprimer la couleur de fond */
+    border: none;  /* Enlever toute bordure */
+    box-shadow: none;  /* Enlever l'ombre portée */
 }
 
 #about h2 {
@@ -172,9 +172,10 @@ section h2 {
     padding: 20px;
     max-width: 600px;
     margin: 0 auto;
-    background-color: transparent; /* Enlever la couleur de fond */
-    border: none; /* Enlever la bordure */
-    box-shadow: none; /* Enlever l'ombre */
+    background-color: transparent;  /* Supprimer la couleur de fond */
+    border: none;  /* Enlever toute bordure */
+    box-shadow: none;  /* Enlever l'ombre portée */
+    border-radius: 0;  /* Enlever tout arrondi */
 }
 
 #contact input,
@@ -200,12 +201,12 @@ section h2 {
     background-color: #004d40;
 }
 
-/* Footer (sans boîte) */
+/* Footer - sans boîte */
 footer {
-    background-color: transparent; /* Enlever la couleur de fond */
+    background-color: transparent;  /* Supprimer la couleur de fond */
     padding: 20px;
     text-align: center;
     font-size: 1em;
-    border: none; /* Enlever la bordure */
-    box-shadow: none; /* Enlever l'ombre */
+    border: none;  /* Enlever toute bordure */
+    box-shadow: none;  /* Enlever l'ombre portée */
 }
