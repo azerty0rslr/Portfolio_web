@@ -1,110 +1,150 @@
-/* Mise en page générale */
-body {
-    font-family: Arial, sans-serif;
+/* Réinitialisation des marges et paddings */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa;
     color: #333;
+    padding: 0 20px;
 }
 
-h2, h3 {
-    color: #333;
-    font-weight: bold;
-}
-
-h3 {
-    margin-top: 20px;
-}
-
-/* Section générale */
-section {
-    padding: 40px 20px;
-    margin: 20px auto;
+/* Conteneur principal */
+.container {
     max-width: 1200px;
-    background-color: #fff;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(135deg, #00796b, #004d40);
+    color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Sections */
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 2.5em;
+    color: #00796b;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 /* À propos */
 #a-propos {
-    background-color: #e0f7fa;
-    border-left: 5px solid #00796b;
-    padding-left: 20px;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
 }
 
 #a-propos p {
-    line-height: 1.6;
-    font-size: 1.1em;
+    line-height: 1.8;
+    font-size: 1.2em;
+    color: #555;
 }
 
-/* Expériences professionnelles et Formation */
-#experience-formation {
-    margin-top: 40px;
-}
-
+/* Expériences professionnelles et formation */
 #experience-formation ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 0;
 }
 
 #experience-formation li {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#experience-formation strong {
+#experience-formation li .title {
+    font-weight: 700;
     font-size: 1.2em;
     color: #00796b;
 }
 
-#experience-formation em {
+#experience-formation li .details {
     font-size: 1em;
     color: #555;
 }
 
 /* Compétences */
 #competences {
-    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #competences ul {
-    list-style-type: square;
-    margin-left: 20px;
-    font-size: 1.1em;
+    list-style-type: none;
+    padding-left: 0;
+    width: 45%;
+    margin-bottom: 30px;
 }
 
 #competences li {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
     margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
 }
 
 /* Projets */
 #projets {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.projets-list {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .projet {
     background-color: #ffffff;
-    margin: 10px;
+    width: 30%;
+    margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.projet:hover {
+    transform: scale(1.05);
 }
 
 .projet h3 {
     color: #00796b;
-    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-size: 1.3em;
 }
 
 .projet p {
-    font-size: 1em;
     color: #555;
 }
 
@@ -112,32 +152,41 @@ section {
 #contact-form {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
 #contact-form label {
     margin-top: 10px;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 #contact-form input, #contact-form textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
     font-size: 1em;
+    background-color: #f7f7f7;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
 }
 
 #contact-form button {
-    padding: 12px 20px;
+    padding: 15px 25px;
     background-color: #00796b;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-top: 20px;
-    cursor: pointer;
     font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #contact-form button:hover {
@@ -146,17 +195,19 @@ section {
 
 /* Footer */
 footer {
+    text-align: center;
+    padding: 30px;
     background-color: #00796b;
     color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
+    border-radius: 8px;
+    margin-top: 60px;
 }
 
 footer a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 footer a:hover {
