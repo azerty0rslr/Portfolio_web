@@ -125,29 +125,30 @@ section h2 {
     font-size: 1.1em;
 }
 
-/* Projets */
+/* Section Projets */
 #projets {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  /* Centrer les projets */
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .projets-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centrer les projets */
-    gap: 20px; /* Ajouter un espace entre les projets */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Centrer les éléments */
+    width: 100%;
 }
 
 .projet {
     background-color: #ffffff;
-    width: 30%;
-    margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
     transition: transform 0.3s ease-in-out;
-    text-align: center; /* Centrer le contenu du projet */
+    width: 100%; /* Prendre toute la largeur disponible */
 }
 
 .projet:hover {
@@ -166,53 +167,42 @@ section h2 {
 }
 
 
-/* Formulaire de contact */
-#contact-form {
+/* Formulaire de Contact */
+#contact {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    margin-top: 30px;
-}
-
-#contact-form label {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-#contact-form input, #contact-form textarea {
-    width: 80%;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
     font-size: 1em;
-    background-color: #f7f7f7;
 }
 
-#contact-form textarea {
-    resize: vertical;
-    min-height: 150px;
-}
-
-#contact-form button {
-    padding: 15px 25px;
+#contact input[type="submit"] {
     background-color: #00796b;
     color: white;
-    border: none;
-    border-radius: 8px;
-    margin-top: 20px;
-    font-size: 1.1em;
     cursor: pointer;
-    transition: background-color 0.3s;
-    width: 40%;
-    text-align: center;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-#contact-form button:hover {
+#contact input[type="submit"]:hover {
     background-color: #004d40;
 }
+
 
 /* Footer */
 footer {
