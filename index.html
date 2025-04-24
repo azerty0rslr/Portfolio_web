@@ -61,36 +61,34 @@
 
         <!-- Projets -->
         <section id="projets">
-            <h2>Projets</h2>
+            <h2>Mes Projets</h2>
             <div class="projets-list">
                 <div class="projet">
                     <h3>Projet 1</h3>
-                    <p>Description du projet...</p>
+                    <p>Une description détaillée du projet...</p>
                 </div>
                 <div class="projet">
                     <h3>Projet 2</h3>
-                    <p>Description du projet...</p>
+                    <p>Une description détaillée du projet...</p>
+                </div>
+                <div class="projet">
+                    <h3>Projet 3</h3>
+                    <p>Une description détaillée du projet...</p>
                 </div>
             </div>
         </section>
 
+
         <!-- Formulaire de contact -->
-        <section id="contact-form">
+        <section id="contact">
             <h2>Contactez-moi</h2>
-            <form>
-                <label for="name">Nom</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Envoyer</button>
+            <form action="submit_form.php" method="POST">
+                <input type="email" name="email" placeholder="Votre Email" required>
+                <textarea name="message" placeholder="Votre Message" rows="6" required></textarea>
+                <input type="submit" value="Envoyer">
             </form>
         </section>
-    </div>
+
 
     <footer>
         <p>© 2025 Manon Rousselière. Tous droits réservés.</p>
