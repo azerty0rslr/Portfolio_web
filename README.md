@@ -29,10 +29,8 @@ Il présente mon profil, mes compétences, mes projets et mes coordonnées de co
 ```bash
 .
 ├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
+├── style.css
+├── script.js
 ├── assets/
 │   ├── images/
 │   └── icons/
